@@ -24,7 +24,7 @@ const drawerWidth = 150;
 
 const Navbar = withRouter(({ history }) => {
   const classes = useStyles();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -38,8 +38,12 @@ const Navbar = withRouter(({ history }) => {
                 </IconButton>
               </Link>
               {auth.isAuthenticated() && (
-                <IconButton aria-label="Menu" style={openStyle(open)}>
-                  <Menu onClick={() => setOpen(!open)} />
+                <IconButton
+                  aria-label="Menu"
+                  style={openStyle(open)}
+                  onClick={() => setOpen(!open)}
+                >
+                  <Menu />
                 </IconButton>
               )}
             </Grid>

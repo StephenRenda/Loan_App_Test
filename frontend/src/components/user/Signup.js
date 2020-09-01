@@ -144,8 +144,8 @@ const styles = (theme) => ({
     color: theme.palette.openTitle,
   },
   textField: {
-    marginLeft: theme.spacing,
-    marginRight: theme.spacing,
+    marginLeft: theme.spacing(),
+    marginRight: theme.spacing(),
     width: 300,
   },
   submit: {

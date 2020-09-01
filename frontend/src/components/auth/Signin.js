@@ -55,7 +55,7 @@ const Signin = (props) => {
     },
   };
   return form.redirectToReferrer ? (
-    (console.log("Redirecting......" + from), <Redirect to={from} />)
+    <Redirect to={from} />
   ) : (
     <Card className={classes.card}>
       <CardContent>
@@ -119,8 +119,8 @@ const styles = (theme) => ({
     color: theme.palette.openTitle,
   },
   textField: {
-    marginLeft: theme.spacing,
-    marginRight: theme.spacing,
+    marginLeft: theme.spacing(),
+    marginRight: theme.spacing(),
     width: 300,
   },
   submit: {
