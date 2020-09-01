@@ -1,6 +1,6 @@
 # Loan_App_Test
 Starting point to build a Hard Money Lending local application.
-The Loan app need to have user authentication and a local storage of some kind.
+The Loan app needs to have user authentication and a local storage.
 
 Starting code can be found here!
 This starter code uses old react practices to authenticate users with local storage.
