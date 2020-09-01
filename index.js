@@ -26,5 +26,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(config.port, () => {
-  console.log(`🚀 at port ${config.port}`);
+  console.log(`Server started at port ${config.port}`);
 });

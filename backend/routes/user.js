@@ -11,7 +11,7 @@ import { requireSignin, hasAuthorization } from "../controllers/auth";
 const router = express.Router();
 
 router.route("/api/users").post(registerUser);
-console.log(hasAuthorization);
+// console.log(hasAuthorization);
 router
   .route("/api/users/:userId")
   .get(requireSignin, findUserProfile)
