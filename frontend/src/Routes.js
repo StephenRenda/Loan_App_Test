@@ -13,11 +13,14 @@ const Routes = () => {
     <div>
       <Navbar />
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={(props) => <Home {...props} />} />
         <PrivateRoutes path="/user/edit/:userId" />
-        <Route path="/user/:userId" component={Profile} />
-        <Route path="/signup" component={Signup} />
-        <Route path="/signin" component={Signin} />
+        <Route
+          path="/user/:userId"
+          component={(props) => <Profile {...props} />}
+        />
+        <Route path="/signup" component={(props) => <Signup {...props} />} />
+        <Route path="/signin" component={(props) => <Signin {...props} />} />
       </Switch>
     </div>
   );
